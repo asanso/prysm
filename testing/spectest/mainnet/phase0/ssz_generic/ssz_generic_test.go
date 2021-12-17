@@ -1,4 +1,4 @@
-package ssz_static
+package ssz_generic
 
 import (
 	"testing"
