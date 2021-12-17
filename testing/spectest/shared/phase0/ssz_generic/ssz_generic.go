@@ -25,9 +25,9 @@ type SSZRoots struct {
 // RunSSZGenericTests executes "ssz_generic" tests.
 func RunSSZGenericTests(t *testing.T, config string) {
 	require.NoError(t, utils.SetConfig(t, config))
-	testFolders, _ := utils.TestFolders(t, config, "phase0", "ssz_static")
+	testFolders, _ := utils.TestFolders(t, config, "phase0", "ssz_generic")
 	for _, folder := range testFolders {
-		modePath := path.Join("ssz_static", folder.Name())
+		modePath := path.Join("ssz_generic", folder.Name())
 		modeFolders, _ := utils.TestFolders(t, config, "phase0", modePath)
 
 		for _, modeFolder := range modeFolders {
