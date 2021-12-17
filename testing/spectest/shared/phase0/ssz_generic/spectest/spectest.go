@@ -1,4 +1,4 @@
-package ssz_generic
+package spectest
 
 /*type SingleFieldTestStruct struct {
 	A byte
